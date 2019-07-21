@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
+    "url": "https://github.com/George19890716/ming-test-react-lib.git"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
@@ -51,7 +51,7 @@
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
