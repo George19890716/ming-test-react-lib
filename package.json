@@ -1,6 +1,6 @@
 {
   "name": "ming-test-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -8,12 +8,10 @@
     "url": "https://github.com/George19890716/ming-test-react-lib.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "start-storybook -p 6006",
     "build": "babel src/lib --out-dir lib --copy-files",
-    "normal-build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o dist"
+    "build-storybook": "build-storybook -c .storybook -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Ming Xu 1989/07/16",
@@ -32,27 +30,16 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "babel-loader": "^8.0.6",
-    "classnames": "^2.2.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
-    "file-loader": "^4.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-safe-parser": "^4.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-intl": "^2.9.0",
     "sass-loader": "^7.1.0",
     "storybook-addon-intl": "^2.4.1",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",
     "webpack": "^4.36.1",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-cli": "^3.3.6"
   },
   "peerDependencies": {
     "classnames": "^2.2.6",
